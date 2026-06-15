@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Цены на установку видеонаблюдения и сетевого оборудования | NetSecure
+    </title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">
+            <i class="fas fa-network-wired"></i>
+            <span>Техноком-Групп</span>
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="prices.html" class="active">Цены</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="nav-right">
+            <a href="tel:+78512345678" class="phone">
+              <i class="fas fa-phone"></i>
+              +7 (851) 234-56-78
+            </a>
+            <button class="burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title animate-text">Цены на услуги</h1>
+        <div class="breadcrumbs">
+          <a href="index.html">Главная</a>
+          <span>/</span>
+          <span>Цены</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Price Calculator -->
+    <section class="calculator-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Калькулятор стоимости</h2>
+          <p class="section-subtitle">
+            Рассчитайте примерную стоимость вашего проекта
+          </p>
+        </div>
+        <div class="calculator-wrapper scroll-reveal">
+          <div class="calculator-form">
+            <div class="calc-step active" data-step="1">
+              <h3>Выберите тип объекта</h3>
+              <div class="calc-options">
+                <label class="calc-option">
+                  <input type="radio" name="objectType" value="apartment" />
+                  <div class="option-content">
+                    <i class="fas fa-home"></i>
+                    <span>Квартира</span>
+                  </div>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="objectType" value="house" />
+                  <div class="option-content">
+                    <i class="fas fa-house-user"></i>
+                    <span>Частный дом</span>
+                  </div>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="objectType" value="office" />
+                  <div class="option-content">
+                    <i class="fas fa-building"></i>
+                    <span>Офис</span>
+                  </div>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="objectType" value="shop" />
+                  <div class="option-content">
+                    <i class="fas fa-store"></i>
+                    <span>Магазин</span>
+                  </div>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="objectType" value="warehouse" />
+                  <div class="option-content">
+                    <i class="fas fa-warehouse"></i>
+                    <span>Склад</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-step" data-step="2">
+              <h3>Количество камер</h3>
+              <div class="calc-input-group">
+                <label>Выберите количество камер видеонаблюдения</label>
+                <input
+                  type="range"
+                  id="camerasCount"
+                  min="2"
+                  max="32"
+                  value="4"
+                  step="2"
+                />
+                <div class="range-value">
+                  <span id="camerasValue">4</span> камер(ы)
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-step" data-step="3">
+              <h3>Тип камер</h3>
+              <div class="calc-options">
+                <label class="calc-option">
+                  <input type="radio" name="cameraType" value="analog" />
+                  <div class="option-content">
+                    <i class="fas fa-video"></i>
+                    <span>AHD/TVI</span>
+                    <small>от 4 200 ₽</small>
+                  </div>
+                </label>
+                <label class="calc-option">
+                  <input type="radio" name="cameraType" value="ip" />
+                  <div class="option-content">
+                    <i class="fas fa-camera"></i>
+                    <span>IP-камеры</span>
+                    <small>от 8 500 ₽</small>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-step" data-step="4">
+              <h3>Дополнительно</h3>
+              <div class="calc-checkboxes">
+                <label class="calc-checkbox">
+                  <input type="checkbox" name="addon" value="network" />
+                  <span>Настройка сети</span>
+                  <span class="price">+5 000 ₽</span>
+                </label>
+                <label class="calc-checkbox">
+                  <input type="checkbox" name="addon" value="wifi" />
+                  <span>Установка Wi-Fi</span>
+                  <span class="price">+8 000 ₽</span>
+                </label>
+                <label class="calc-checkbox">
+                  <input type="checkbox" name="addon" value="remote" />
+                  <span>Удаленный доступ</span>
+                  <span class="price">+3 000 ₽</span>
+                </label>
+                <label class="calc-checkbox">
+                  <input type="checkbox" name="addon" value="support" />
+                  <span>Годовое обслуживание</span>
+                  <span class="price">+42 000 ₽</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-navigation">
+              <button
+                class="btn btn-outline"
+                id="calcPrev"
+                style="display: none"
+              >
+                <i class="fas fa-arrow-left"></i> Назад
+              </button>
+              <button class="btn btn-primary" id="calcNext">
+                Далее <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="calculator-result">
+            <h3>Итоговая стоимость</h3>
+            <div class="result-price" id="totalPrice">0 ₽</div>
+            <div class="result-details" id="priceDetails"></div>
+            <div class="result-note">
+              <i class="fas fa-info-circle"></i>
+              <p>
+                Точная стоимость рассчитывается после выезда специалиста на
+                объект
+              </p>
+            </div>
+            <button class="btn btn-primary btn-block" onclick="openModal()">
+              <i class="fas fa-calculator"></i>
+              Получить точный расчет
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Price Tables -->
+    <section class="price-tables">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Прайс-лист</h2>
+        </div>
+
+        <!-- Video Surveillance Prices -->
+        <div class="price-table-wrapper scroll-reveal">
+          <h3 class="table-title">
+            <i class="fas fa-video"></i>
+            Видеонаблюдение
+          </h3>
+          <div class="price-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Услуга</th>
+                  <th>Единица</th>
+                  <th>Цена</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>IP-камера 2 Мп (с установкой)</td>
+                  <td>шт.</td>
+                  <td>8 500 ₽</td>
+                </tr>
+                <tr>
+                  <td>IP-камера 4 Мп (с установкой)</td>
+                  <td>шт.</td>
+                  <td>11 200 ₽</td>
+                </tr>
+                <tr>
+                  <td>IP-камера 8 Мп (с установкой)</td>
+                  <td>шт.</td>
+                  <td>15 800 ₽</td>
+                </tr>
+                <tr>
+                  <td>AHD/TVI камера 2 Мп (с установкой)</td>
+                  <td>шт.</td>
+                  <td>4 200 ₽</td>
+                </tr>
+                <tr>
+                  <td>AHD/TVI камера 5 Мп (с установкой)</td>
+                  <td>шт.</td>
+                  <td>5 800 ₽</td>
+                </tr>
+                <tr>
+                  <td>Видеорегистратор 4 канала</td>
+                  <td>шт.</td>
+                  <td>12 000 ₽</td>
+                </tr>
+                <tr>
+                  <td>Видеорегистратор 8 каналов</td>
+                  <td>шт.</td>
+                  <td>18 500 ₽</td>
+                </tr>
+                <tr>
+                  <td>Видеорегистратор 16 каналов</td>
+                  <td>шт.</td>
+                  <td>28 000 ₽</td>
+                </tr>
+                <tr>
+                  <td>HDD для записи (1 Тб)</td>
+                  <td>шт.</td>
+                  <td>4 500 ₽</td>
+                </tr>
+                <tr>
+                  <td>Монитор для просмотра</td>
+                  <td>шт.</td>
+                  <td>от 8 000 ₽</td>
+                </tr>
+                <tr>
+                  <td>Настройка удаленного доступа</td>
+                  <td>услуга</td>
+                  <td>3 000 ₽</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Network Equipment Prices -->
+        <div class="price-table-wrapper scroll-reveal">
+          <h3 class="table-title">
+            <i class="fas fa-network-wired"></i>
+            Сетевое оборудование
+          </h3>
+          <div class="price-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Услуга</th>
+                  <th>Единица</th>
+                  <th>Цена</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Точка доступа Wi-Fi (с установкой)</td>
+                  <td>шт.</td>
+                  <td>от 8 500 ₽</td>
+                </tr>
+                <tr>
+                  <td>Коммутатор 8 портов</td>
+                  <td>шт.</td>
+                  <td>от 5 500 ₽</td>
+                </tr>
+                <tr>
+                  <td>Коммутатор 24 порта</td>
+                  <td>шт.</td>
+                  <td>от 15 000 ₽</td>
+                </tr>
+                <tr>
+                  <td>Маршрутизатор (роутер)</td>
+                  <td>шт.</td>
+                  <td>от 8 000 ₽</td>
+                </tr>
+                <tr>
+                  <td>Серверный шкаф 19"</td>
+                  <td>шт.</td>
+                  <td>от 12 000 ₽</td>
+                </tr>
+                <tr>
+                  <td>Монтаж серверного шкафа</td>
+                  <td>услуга</td>
+                  <td>8 000 ₽</td>
+                </tr>
+                <tr>
+                  <td>Настройка сетевого оборудования</td>
+                  <td>устройство</td>
+                  <td>от 2 500 ₽</td>
+                </tr>
+                <tr>
+                  <td>Построение VPN</td>
+                  <td>услуга</td>
+                  <td>от 10 000 ₽</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Cable Installation Prices -->
+        <div class="price-table-wrapper scroll-reveal">
+          <h3 class="table-title">
+            <i class="fas fa-tools"></i>
+            Монтажные работы
+          </h3>
+          <div class="price-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Услуга</th>
+                  <th>Единица</th>
+                  <th>Цена</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Прокладка витой пары (открыто)</td>
+                  <td>м.п.</td>
+                  <td>150 ₽</td>
+                </tr>
+                <tr>
+                  <td>Прокладка витой пары (скрыто)</td>
+                  <td>м.п.</td>
+                  <td>250 ₽</td>
+                </tr>
+                <tr>
+                  <td>Прокладка коаксиального кабеля</td>
+                  <td>м.п.</td>
+                  <td>120 ₽</td>
+                </tr>
+                <tr>
+                  <td>Прокладка оптоволокна</td>
+                  <td>м.п.</td>
+                  <td>от 300 ₽</td>
+                </tr>
+                <tr>
+                  <td>Штробление под кабель</td>
+                  <td>м.п.</td>
+                  <td>350 ₽</td>
+                </tr>
+                <tr>
+                  <td>Монтаж кабель-канала</td>
+                  <td>м.п.</td>
+                  <td>180 ₽</td>
+                </tr>
+                <tr>
+                  <td>Монтаж гофры</td>
+                  <td>м.п.</td>
+                  <td>120 ₽</td>
+                </tr>
+                <tr>
+                  <td>Обжим разъема RJ-45</td>
+                  <td>шт.</td>
+                  <td>100 ₽</td>
+                </tr>
+                <tr>
+                  <td>Установка розетки RJ-45</td>
+                  <td>шт.</td>
+                  <td>500 ₽</td>
+                </tr>
+                <tr>
+                  <td>Сварка оптического волокна</td>
+                  <td>соединение</td>
+                  <td>800 ₽</td>
+                </tr>
+                <tr>
+                  <td>Сертификация линии</td>
+                  <td>точка</td>
+                  <td>1 200 ₽</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Package Deals -->
+    <section class="packages-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Готовые решения</h2>
+          <p class="section-subtitle">Выгодные пакеты услуг</p>
+        </div>
+        <div class="packages-grid">
+          <div class="package-card scroll-reveal">
+            <div class="package-header">
+              <h3>Квартира</h3>
+              <p class="package-subtitle">Базовая защита для дома</p>
+            </div>
+            <div class="package-price">
+              <span class="price-old">32 000 ₽</span>
+              <span class="price-new">25 500 ₽</span>
+            </div>
+            <ul class="package-features">
+              <li><i class="fas fa-check"></i> 4 IP-камеры 2 Мп</li>
+              <li><i class="fas fa-check"></i> Видеорегистратор 4 канала</li>
+              <li><i class="fas fa-check"></i> HDD 1 Тб</li>
+              <li><i class="fas fa-check"></i> Прокладка кабелей до 40 м</li>
+              <li><i class="fas fa-check"></i> Настройка и пусконаладка</li>
+              <li><i class="fas fa-check"></i> Удаленный доступ</li>
+            </ul>
+            <button class="btn btn-primary btn-block" onclick="openModal()">
+              Заказать
+            </button>
+          </div>
+
+          <div class="package-card featured scroll-reveal">
+            <div class="package-badge">Хит продаж</div>
+            <div class="package-header">
+              <h3>Офис</h3>
+              <p class="package-subtitle">Комплексное решение</p>
+            </div>
+            <div class="package-price">
+              <span class="price-old">78 000 ₽</span>
+              <span class="price-new">64 900 ₽</span>
+            </div>
+            <ul class="package-features">
+              <li><i class="fas fa-check"></i> 8 IP-камер 4 Мп</li>
+              <li><i class="fas fa-check"></i> Видеорегистратор 8 каналов</li>
+              <li><i class="fas fa-check"></i> HDD 2 Тб</li>
+              <li><i class="fas fa-check"></i> Прокладка СКС до 100 м</li>
+              <li><i class="fas fa-check"></i> 2 точки Wi-Fi</li>
+              <li><i class="fas fa-check"></i> Настройка сети</li>
+              <li><i class="fas fa-check"></i> Обслуживание 6 месяцев</li>
+            </ul>
+            <button class="btn btn-primary btn-block" onclick="openModal()">
+              Заказать
+            </button>
+          </div>
+
+          <div class="package-card scroll-reveal">
+            <div class="package-header">
+              <h3>Магазин</h3>
+              <p class="package-subtitle">Профессиональная безопасность</p>
+            </div>
+            <div class="package-price">
+              <span class="price-old">125 000 ₽</span>
+              <span class="price-new">105 000 ₽</span>
+            </div>
+            <ul class="package-features">
+              <li><i class="fas fa-check"></i> 16 IP-камер 4 Мп</li>
+              <li><i class="fas fa-check"></i> Видеорегистратор 16 каналов</li>
+              <li><i class="fas fa-check"></i> HDD 4 Тб</li>
+              <li><i class="fas fa-check"></i> Аналитика и подсчет</li>
+              <li><i class="fas fa-check"></i> Структурированная сеть</li>
+              <li><i class="fas fa-check"></i> Wi-Fi для клиентов</li>
+              <li><i class="fas fa-check"></i> Обслуживание 12 месяцев</li>
+            </ul>
+            <button class="btn btn-primary btn-block" onclick="openModal()">
+              Заказать
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="offers-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Акции и специальные предложения</h2>
+        </div>
+        <div class="offers-grid">
+          <div class="offer-card scroll-reveal">
+            <div class="offer-badge">-20%</div>
+            <div class="offer-icon">
+              <i class="fas fa-gift"></i>
+            </div>
+            <h3>Скидка на комплекты</h3>
+            <p>
+              При заказе от 10 камер - скидка 20% на весь комплект оборудования
+            </p>
+            <div class="offer-period">До 31 марта 2024</div>
+          </div>
+
+          <div class="offer-card scroll-reveal">
+            <div class="offer-badge">Бесплатно</div>
+            <div class="offer-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Бесплатный выезд</h3>
+            <p>
+              Выезд специалиста и составление сметы бесплатно при заказе от 30
+              000 ₽
+            </p>
+            <div class="offer-period">Постоянная акция</div>
+          </div>
+
+          <div class="offer-card scroll-reveal">
+            <div class="offer-badge">+2 года</div>
+            <div class="offer-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Расширенная гарантия</h3>
+            <p>
+              При заключении договора на обслуживание - гарантия увеличивается
+              до 5 лет
+            </p>
+            <div class="offer-period">Ограниченное предложение</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <i class="fas fa-network-wired"></i>
+              <span>Техноком-Групп</span>
+            </div>
+            <p>
+              Профессиональная установка систем видеонаблюдения и сетевого
+              оборудования в Астрахани с 2016 года
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Услуги</h4>
+            <ul>
+              <li><a href="services.html#video">Видеонаблюдение</a></li>
+              <li><a href="services.html#network">Сетевое оборудование</a></li>
+              <li><a href="services.html#install">Монтаж и прокладка</a></li>
+              <li><a href="services.html#support">Обслуживание</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Компания</h4>
+            <ul>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="portfolio.html">Портфолио</a></li>
+              <li><a href="prices.html">Цены</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <ul class="contact-list">
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+78512345678">+7 (851) 234-56-78</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@netsecure.ru">info@netsecure.ru</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>г. Астрахань, ул. Ленина, 25</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Техноком-Групп. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="consultModal">
+      <div class="modal-overlay" onclick="closeModal()"></div>
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <h3>Заказать расчет</h3>
+        <form id="modalForm">
+          <div class="form-group">
+            <input type="text" placeholder="Ваше имя" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="+7 (___) ___-__-__" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Опишите ваш объект" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/calculator.js"></script>
+  </body>
+</html>
