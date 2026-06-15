@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Установка видеонаблюдения и сетевого оборудования в Астрахани |
+      Техноком-Групп
+    </title>
+    <meta
+      name="description"
+      content="Профессиональная установка систем видеонаблюдения и сетевого оборудования в Астрахани. Быстро, качественно, с гарантией."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">
+            <i class="fas fa-network-wired"></i>
+            <span>Техноком-Групп</span>
+          </div>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="portfolio.html">Портфолио</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="prices.html">Цены</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="nav-right">
+            <a href="tel:+78512345678" class="phone">
+              <i class="fas fa-phone"></i>
+              +7 (851) 234-56-78
+            </a>
+            <button class="burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title animate-text">
+            <h2>Установка систем</h2>
+            <h2> видеонаблюдения </h2>
+            <h2>и сетевого оборудования</h2>
+          </h1>
+          <p class="hero-subtitle fade-in">
+            в Астрахани и Астраханской области
+          </p>
+          <div class="hero-features fade-in">
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Гарантия 3 года</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Монтаж за 1 день</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Сертифицированные специалисты</span>
+            </div>
+          </div>
+          <div class="hero-buttons fade-in">
+            <button class="btn btn-primary" onclick="openModal()">
+              <i class="fas fa-calendar-check"></i>
+              Заказать консультацию
+            </button>
+            <a href="#services" class="btn btn-outline">
+              <i class="fas fa-arrow-down"></i>
+              Наши услуги
+            </a>
+          </div>
+        </div>
+        <div class="hero-image fade-in">
+          <img
+            src="images/camera-21.png"
+            alt="Видеонаблюдение"
+            class="floating"
+          />
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Наши услуги</h2>
+          <p class="section-subtitle">
+            Полный спектр решений для вашей безопасности
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3>Видеонаблюдение</h3>
+            <p>
+              Установка IP и аналоговых систем видеонаблюдения любой сложности
+            </p>
+            <ul class="service-list">
+              <li>
+                <i class="fas fa-check"></i> IP-камеры высокого разрешения
+              </li>
+              <li><i class="fas fa-check"></i> Аналоговые системы</li>
+              <li><i class="fas fa-check"></i> Видеорегистраторы</li>
+              <li><i class="fas fa-check"></i> Удаленный доступ</li>
+            </ul>
+            <a href="services.html#video" class="service-link">
+              Подробнее <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>Сетевое оборудование</h3>
+            <p>
+              Монтаж и настройка сетевой инфраструктуры для офисов и предприятий
+            </p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> Роутеры и коммутаторы</li>
+              <li><i class="fas fa-check"></i> Wi-Fi точки доступа</li>
+              <li><i class="fas fa-check"></i> Серверное оборудование</li>
+              <li><i class="fas fa-check"></i> Структурированные сети</li>
+            </ul>
+            <a href="services.html#network" class="service-link">
+              Подробнее <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Монтаж и прокладка</h3>
+            <p>
+              Профессиональная прокладка кабельных линий и монтаж оборудования
+            </p>
+            <ul class="service-list">
+              <li>
+                <i class="fas fa-check"></i> Структурированные кабельные системы
+              </li>
+              <li><i class="fas fa-check"></i> Прокладка витой пары</li>
+              <li>
+                <i class="fas fa-check"></i> Монтаж в короба и кабель-каналы
+              </li>
+              <li><i class="fas fa-check"></i> Сертификация линий</li>
+            </ul>
+            <a href="services.html#install" class="service-link">
+              Подробнее <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="service-card scroll-reveal">
+            <div class="service-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Обслуживание</h3>
+            <p>
+              Техническая поддержка и обслуживание установленного оборудования
+            </p>
+            <ul class="service-list">
+              <li><i class="fas fa-check"></i> Настройка и модернизация</li>
+              <li><i class="fas fa-check"></i> Профилактические работы</li>
+              <li><i class="fas fa-check"></i> Аварийный выезд 24/7</li>
+              <li><i class="fas fa-check"></i> Консультации специалистов</li>
+            </ul>
+            <a href="services.html#support" class="service-link">
+              Подробнее <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats/Advantages -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item scroll-reveal">
+            <div class="stat-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="stat-number" data-target="450">0</div>
+            <div class="stat-label">Завершенных проектов</div>
+          </div>
+          <div class="stat-item scroll-reveal">
+            <div class="stat-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-number" data-target="380">0</div>
+            <div class="stat-label">Довольных клиентов</div>
+          </div>
+          <div class="stat-item scroll-reveal">
+            <div class="stat-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-number" data-target="8">0</div>
+            <div class="stat-label">Лет на рынке</div>
+          </div>
+          <div class="stat-item scroll-reveal">
+            <div class="stat-icon">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="stat-number" data-target="15">0</div>
+            <div class="stat-label">Сертифицированных специалистов</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Slider -->
+    <section class="portfolio-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Наши работы</h2>
+          <p class="section-subtitle">Реализованные проекты в Астрахани</p>
+        </div>
+        <div class="portfolio-slider">
+          <div class="slider-container" id="portfolioSlider">
+            <div class="portfolio-slide">
+              <div class="portfolio-image">
+                <img src="images/portfolio/city-2.jpg" alt="ТЦ СИТИ астрахань" />
+                <div class="portfolio-overlay">
+                  <h3>ТЦ "Сити"</h3>
+                  <p>Установка 24 IP-камер и сетевой инфраструктуры</p>
+                  <a href="portfolio.html" class="btn btn-primary"
+                    >Смотреть проект</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-slide">
+              <div class="portfolio-image">
+                <img
+                  src="images/portfolio/ast-volga-1.jpg"
+                  alt="Волга-Сити"
+                />
+                <div class="portfolio-overlay">
+                  <h3>Волга-Сити</h3>
+                  <p>Система видеонаблюдения периметра и помещений</p>
+                  <a href="portfolio.html" class="btn btn-primary"
+                    >Смотреть проект</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-slide">
+              <div class="portfolio-image">
+                <img src="images/Razum_jk-1.jpg" alt="Торговый центр" />
+                <div class="portfolio-overlay">
+                  <h3>ЖК "Разум"</h3>
+                  <p>Комплексное решение: видеонаблюдение + Wi-Fi</p>
+                  <a href="portfolio.html" class="btn btn-primary"
+                    >Смотреть проект</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn slider-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider-btn slider-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+        <div class="text-center" style="margin-top: 40px">
+          <a href="portfolio.html" class="btn btn-outline">
+            Все проекты <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Отзывы клиентов</h2>
+          <p class="section-subtitle">Что говорят о нашей работе</p>
+        </div>
+        <div class="testimonials-slider">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/avatars/avatar1.jpg" alt="Иван Петров" />
+                <div>
+                  <h4>Иван Петров</h4>
+                  <p>Директор ООО "СтройТехника"</p>
+                </div>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Отличная работа! Установили систему видеонаблюдения на складе
+                за один день. Все камеры работают четко, можно смотреть с
+                телефона. Ребята профессионалы!"
+              </p>
+              <div class="testimonial-date">15 января 2024</div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/avatars/avatar2.jpg" alt="Елена Смирнова" />
+                <div>
+                  <h4>Елена Смирнова</h4>
+                  <p>Владелец магазина "Продукты 24"</p>
+                </div>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Очень довольна! Поставили 8 камер в магазине, настроили Wi-Fi
+                для кассы. Цены адекватные, работают быстро и аккуратно.
+                Рекомендую!"
+              </p>
+              <div class="testimonial-date">8 февраля 2024</div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <img src="images/avatars/avatar3.jpg" alt="Сергей Волков" />
+                <div>
+                  <h4>Сергей Волков</h4>
+                  <p>Руководитель IT-отдела "АстраханьГаз"</p>
+                </div>
+              </div>
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="testimonial-text">
+                "Заказывали прокладку структурированной кабельной системы в
+                офисе на 50 рабочих мест. Выполнили качественно, с
+                сертификацией. Техподдержка на высоте!"
+              </p>
+              <div class="testimonial-date">22 февраля 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Order Form -->
+    <section class="quick-order">
+      <div class="container">
+        <div class="order-wrapper">
+          <div class="order-content scroll-reveal">
+            <h2>Получите бесплатную консультацию</h2>
+            <p>
+              Оставьте заявку и наш специалист свяжется с вами в течение 15
+              минут
+            </p>
+            <ul class="order-benefits">
+              <li>
+                <i class="fas fa-check-circle"></i> Выезд специалиста бесплатно
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Расчет стоимости на месте
+              </li>
+              <li><i class="fas fa-check-circle"></i> Гарантия лучшей цены</li>
+            </ul>
+          </div>
+          <div class="order-form scroll-reveal">
+            <form id="quickOrderForm">
+              <div class="form-group">
+                <input type="text" placeholder="Ваше имя" required />
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="form-group">
+                <input type="tel" placeholder="+7 (___) ___-__-__" required />
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="form-group">
+                <select required>
+                  <option value="">Выберите услугу</option>
+                  <option value="video">Видеонаблюдение</option>
+                  <option value="network">Сетевое оборудование</option>
+                  <option value="install">Монтаж и прокладка</option>
+                  <option value="support">Обслуживание</option>
+                </select>
+                <i class="fas fa-list"></i>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fas fa-paper-plane"></i>
+                Отправить заявку
+              </button>
+              <p class="form-privacy">
+                Нажимая кнопку, вы соглашаетесь с
+                <a href="#">политикой конфиденциальности</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Зона обслуживания</h2>
+          <p class="section-subtitle">
+            Работаем в Астрахани и Астраханской области
+          </p>
+        </div>
+      </div>
+      <div class="map-container">
+        <div id="map" class="map"></div>
+        <div class="map-overlay">
+          <div class="map-info">
+            <h3><i class="fas fa-map-marker-alt"></i> Астрахань</h3>
+            <p>Выезд специалиста в день обращения</p>
+            <div class="coverage-list">
+              <div class="coverage-item">
+                <i class="fas fa-check"></i>
+                <span>Центральный район</span>
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-check"></i>
+                <span>Ленинский район</span>
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-check"></i>
+                <span>Кировский район</span>
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-check"></i>
+                <span>Трусовский район</span>
+              </div>
+              <div class="coverage-item">
+                <i class="fas fa-check"></i>
+                <span>Астраханская область</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <i class="fas fa-network-wired"></i>
+              <span>Техноком-Групп </span>
+            </div>
+            <p>
+              Профессиональная установка систем видеонаблюдения и сетевого
+              оборудования в Астрахани с 2016 года
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Услуги</h4>
+            <ul>
+              <li><a href="services.html#video">Видеонаблюдение</a></li>
+              <li><a href="services.html#network">Сетевое оборудование</a></li>
+              <li><a href="services.html#install">Монтаж и прокладка</a></li>
+              <li><a href="services.html#support">Обслуживание</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Компания</h4>
+            <ul>
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="portfolio.html">Портфолио</a></li>
+              <li><a href="prices.html">Цены</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <ul class="contact-list">
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+78512345678">+7 (851) 234-56-78</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@netsecure.ru">info@netsecure.ru</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>г. Астрахань, ул. Ленина, 25</span>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Пн-Пт: 9:00-18:00, Сб: 10:00-15:00</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 ООО "Техноком-Групп". Все права защищены.</p>
+          <div class="footer-links">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия использования</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="consultModal">
+      <div class="modal-overlay" onclick="closeModal()"></div>
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">
+          <i class="fas fa-times"></i>
+        </button>
+        <h3>Заказать консультацию</h3>
+        <p>Оставьте ваши контакты и мы перезвоним в течение 15 минут</p>
+        <form id="modalForm">
+          <div class="form-group">
+            <input type="text" placeholder="Ваше имя" required />
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="+7 (___) ___-__-__" required />
+          </div>
+          <div class="form-group">
+            <textarea
+              placeholder="Комментарий (необязательно)"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Отправить заявку
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>
